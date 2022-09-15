@@ -8,13 +8,13 @@ Since the API is an interface to the back-end, I believe it must be simple, cons
 
 I think the URI should have proper naming conventions and not be very long (at most 3 levels) to serve this purpose.
 
-|          URI          | Verb |                Description                |    Query Parameters    |                                                                    Usage                                                                    |
+|          URI (starts with /api)          | Verb |                Description                |    Query Parameters    |                                                                    Usage                                                                    |
 | :-------------------: | :--: | :---------------------------------------: | :--------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------: |
-|    /api/menu-items    | GET  |            gets all menu items            |           -            |                            to get all available menu along with minimal details to be displayed in the front-end                            |
-|  /api/menu-items/:id  | GET  | gets details about a particular menu item |           -            |                           to display more details for a specific menu item (maybe if user clicks on a menu item)                            |
-| /api/users/:id/orders | GET  |   gets the orders of the specified user   | start_date?, end_date? | to get the specified user's orders and their status and receipt and handle the case when filter is applied to be displayed in the front-end |
-| /api/users/:id/orders | POST |  adds a new order to the specified user   |           -            |                                                       to handle user making an order                                                        |
-|    /api/orders/:id    | GET  |    gets details of the apecified order    |           -            |          to get information of order status, receipt, and other details for the specified order (maybe if user clicks on an order)          |
+|    /menu-items    | GET  |            gets all menu items            |           -            |                            to get all available menu along with minimal details to be displayed in the front-end                            |
+|  /menu-items/:id  | GET  | gets details about a particular menu item |           -            |                           to display more details for a specific menu item (maybe if user clicks on a menu item)                            |
+| /users/:id/orders | GET  |   gets the orders of the specified user   | start_date?, end_date? | to get the specified user's orders and their status and receipt and handle the case when filter is applied to be displayed in the front-end |
+| /users/:id/orders | POST |  adds a new order to the specified user   |           -            |                                                       to handle user making an order                                                        |
+|    /orders/:id    | GET  |    gets details of the apecified order    |           -            |          to get information of order status, receipt, and other details for the specified order (maybe if user clicks on an order)          |
 
 Notes:
 
